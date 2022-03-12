@@ -13,7 +13,7 @@ body {
     font-family: sans-serif;
     background-position-y: 75px;
     background-image: url(/Images/Fondo/Alternative-al-bitcoin-1-scaled.jpg.png);
-    background-color: #0e0e0e;
+    background-color: #222222;
     background-repeat: no-repeat;
     /* background-size: cover; */
 }
@@ -43,10 +43,23 @@ body {
     max-width: 992px;
 }
 
-.wos {
+.links {
+    margin-left: 12px;
+    margin-top: 20px;
+    width: 150px;
+    display: block;
+    justify-content: center;
+}
+
+.found {
     position: relative;
     width: 80px;
     height: auto;
+}
+
+.found:hover {
+    transition: 0.4s;
+    filter: drop-shadow(0px 0px 20px grey);
 }
 
 .nav-menu {
@@ -92,18 +105,25 @@ body {
     border-radius: 5px;
 }
 
+.nav-menu-link-about:hover {
+    filter: drop-shadow(0px 0px 20px gold);
+    transition: 0.4s;
+}
+
 .nav-menu-item:hover {
     transform: scale(1.2);
     transition: 0.4s;
+    filter: drop-shadow(0px 0px 20px rgba(185, 185, 185, 0.685));
 }
 
 .nav-menu-item-signIn:hover {
     transform: scale(1.2);
+    filter: drop-shadow(0px 0px 20px rgba(185, 185, 185, 0.685));
     transition: 0.4s;
 }
 
 .nav-menu-link:hover {
-    background-color: sienna;
+    filter: drop-shadow(0px 0px 20px #b87333);
     transition: 0.4s;
 }
 
@@ -198,13 +218,13 @@ p {
 }
 
 .team-img {
-    filter: drop-shadow(0 0 20px grey);
     margin: 10px;
     height: auto;
     width: 400px;
 }
 
 .team-img:hover {
+    filter: drop-shadow(0 0 20px grey);
     cursor: pointer;
     transform: scale(1.05);
     transition-duration: 1s;
@@ -216,9 +236,15 @@ p {
 
 /* footer content */
 
+.contactUs {
+    margin-top: 25px;
+}
+
 .contact {
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    filter: drop-shadow(0px 0px 10px black);
 }
 
 .redes {
@@ -231,6 +257,12 @@ p {
     border-radius: 5px;
 }
 
+.token-logo-bil {
+    margin: 10px;
+    height: auto;
+    width: 140px;
+}
+
 .token-logo {
     margin: 25px;
     height: auto;
@@ -238,7 +270,13 @@ p {
 }
 
 h2 {
+    color: silver;
+    filter: drop-shadow(0px 0px 25px silver);
+}
+
+h3 {
     color: goldenrod;
+    filter: drop-shadow(0px 0px 10px black);
 }
 
 .mails {
@@ -267,6 +305,8 @@ h2 {
 
 footer {
     background-image: url(/images/Fondo/texture-leather-wallpaper-preview.jpg);
+    filter: drop-shadow(0px -100px 150px black);
+    backface-visibility: visible;
     background-position-x: center;
     margin-top: 15px;
     line-height: 50px;
@@ -287,6 +327,7 @@ footer {
 }
 
 .copyright {
+    filter: drop-shadow(0px 0px 20px black);
     padding: 10px;
     text-align: center;
     line-height: 1.4;
